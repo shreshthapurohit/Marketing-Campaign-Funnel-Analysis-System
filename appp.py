@@ -1,33 +1,33 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import mysql.connector
+#import mysql.connector
 
 #DATABASE CONNECTION
-conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="k26121110s@",   # ← Your actual password
-        database="marketing_db",
-        use_pure=True              # ← Fixes connector errors
-    )
+#conn = mysql.connector.connect(
+#        host="localhost",
+#       user="root",
+#        password="k26121110s@",   # ← Your actual password
+#        database="marketing_db",
+#        use_pure=True              # ← Fixes connector errors
+#   )
     
-cursor = conn.cursor()
+#cursor = conn.cursor()
 
 #STREAMLIT UI
 st.title("Marketing Funnel Analysis Dashboard")
-st.subheader("User Registration")
+#st.subheader("User Registration")
 
-username = st.text_input("Username")
-email = st.text_input("Email")
-password = st.text_input("Password", type="password")
+#username = st.text_input("Username")
+#email = st.text_input("Email")
+#password = st.text_input("Password", type="password")
 
-if st.button("Register"):
+#if st.button("Register"):
  
- query ="""INSERT INTO users (username, email, password) VALUES (%s, %s, %s)"""
- cursor.execute(query, (username, email, password))
- conn.commit()
- st.success("User registered successfully!")
+#query ="""INSERT INTO users (username, email, password) VALUES (%s, %s, %s)"""
+#cursor.execute(query, (username, email, password))
+# conn.commit()
+# st.success("User registered successfully!")
 
 # ====================================================
 
