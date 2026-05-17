@@ -7,7 +7,7 @@ import plotly.express as px
 conn = mysql.connector.connect(
         host="localhost",
        user="root",
-        password="k26121110s@",   # ← Your actual password
+        password="password",   # ← Your actual password
         database="marketing_db",
         use_pure=True              # ← Fixes connector errors
    )
