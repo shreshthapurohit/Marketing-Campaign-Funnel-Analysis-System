@@ -4,13 +4,13 @@ import plotly.express as px
 #import mysql.connector
 
 #DATABASE CONNECTION
-#conn = mysql.connector.connect(
-#        host="localhost",
-#       user="root",
-#        password="k26121110s@",   # ← Your actual password
-#        database="marketing_db",
-#        use_pure=True              # ← Fixes connector errors
-#   )
+conn = mysql.connector.connect(
+        host="localhost",
+       user="root",
+        password="k26121110s@",   # ← Your actual password
+        database="marketing_db",
+        use_pure=True              # ← Fixes connector errors
+   )
     
 #cursor = conn.cursor()
 
